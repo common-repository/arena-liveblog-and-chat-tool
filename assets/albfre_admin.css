@@ -1,0 +1,215 @@
+.albfre-settings--header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #e8e8e8;
+  padding-left: 39px;
+}
+
+.albfre-settings--body {
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.albfre-settings--body--title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.albfre-settings--form {
+  max-width: 350px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 15px 20px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.albfre-settings--form--label {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  color: #373a3c;
+  display: block;
+}
+
+.albfre-settings--form--input {
+  width: 350px;
+  height: 37px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+}
+
+.albfre-settings--form--group {
+  margin-bottom: 10px;
+}
+
+.albfre-settings--form--button {
+  width: 200px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #9173c7;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.albfre-settings--arena--link {
+  font-weight: bold;
+  color: #9173c7;
+}
+
+.albfre-settings--body--welcome {
+  max-width: 710px;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #8e8e8e;
+  margin: 20px auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.albfre-settings--form--button-logout {
+  border: solid 1px #9173c7;
+  color: #9173c7;
+  background: transparent;
+  position: absolute;
+  top: 25px;
+  right: 60px;
+}
+
+.albfre-settings--body--sp {
+  display: none;
+}
+
+.albfre-sp {
+  width: 32px;
+  height: 32px;
+  clear: both;
+  margin: 20px auto;
+}
+
+.albfre-settings--body--accounts {
+  width: 100%;
+  max-width: 410px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 15px 0 30px 0;
+}
+
+.albfre-settings--body--accounts--title {
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 18px;
+  color: #4A4A4A;
+  margin: 0 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.albfre-settings--body--accounts--form {
+  margin: 20px 30px;
+  margin-bottom: 0;
+}
+
+.albfre-settings--body--accounts--form--label {
+  font-weight: bold;
+  line-height: 19px;
+  font-size: 16px;
+  color: #373A3C;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.albfre-settings--body--accounts--form--select {
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 38px !important;
+  line-height: 24px;
+  font-size: 14px;
+  color: #4A4A4A;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.albfre-settings--body--accounts--form--button {
+  margin: 0 auto;
+  background: #9173C7;
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 12px;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 38px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.albfre-settings--body--accounts--form--success {
+  font-weight: 300;
+  line-height: 12px;
+  font-size: 14px;
+  color: #8AC45F;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.albfre-settings--body--accounts--form--success--check {
+  width: 13px;
+  margin-right: 10px;
+}
+
+/* Spinner Circle Rotation */
+.albfre-sp-circle {
+  border: 4px rgba(0, 0, 0, 0.25) solid;
+  border-top: 4px black solid;
+  border-radius: 50%;
+  -webkit-animation: albfre-spCircRot .6s infinite linear;
+  animation: albfre-spCircRot .6s infinite linear;
+}
+
+@-webkit-keyframes albfre-spCircRot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes albfre-spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.albfre-form--error {
+  color: #cc5965;
+  display: none;
+}

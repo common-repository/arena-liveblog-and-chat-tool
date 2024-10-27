@@ -1,0 +1,514 @@
+#wphead {display:none;}
+#wpbody{margin-left: 0;}
+#wpbody-content{padding-bottom: 0;}
+#adminmenuback {display: none;}
+#adminmenu, adminmenuwrap {display: none;}
+#wpcontent, .auto-fold #wpcontent {margin-left: 0;}
+#wpadminbar {display:none;}
+html.wp-toolbar {padding: 0;}
+#footer, #wpfooter, .auto-fold #wpfooter {display: none;}
+#wpfooter {clear: both}
+.clearboth {clear: both;}
+.pad20 {padding: 20px;}
+.center {text-align: center;}
+.bold {font-weight: bold;}
+.orange{color:#f85d00; }
+.smallnote {
+    font-size: small;
+    font-style: italic;
+}
+
+.albfre-list-events {
+  margin-left: -20px;
+  background: white;
+  height: 100vh;
+  overflow: auto;
+}
+
+.albfre-events--item--wrapper {
+  background: white;
+  margin: 13px 0;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+  border-radius: 4px;
+  display: flex;
+  transition: all 0.2s ease;
+}
+
+.albfre-events--item--wrapper:hover {
+  box-shadow: rgba(0, 0, 0, 0.188235) 0px 10px 30px, rgba(0, 0, 0, 0.227451) 0px 6px 10px;
+}
+
+.albfre-events-badge--wrapper {
+  width: 65px;
+  background: #f5f6fa;
+  border-bottom-left-radius: 4px;
+  flex-shrink: 0;
+}
+
+.albfre-events-upcoming-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.albfre-events-badge {
+  width: 100%;
+  height: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.54;
+  border-top-left-radius: 4px;
+  text-transform: uppercase;
+}
+
+.albfre-events-badge-live  {
+  background: #ff0054;
+}
+
+.albfre-events-badge-today  {
+  background: #2fcd4a;
+}
+
+.albfre-events-badge-upcoming {
+  background: #efefef;
+  color: #9b9b9b;
+}
+
+.albfre-events-badge-done {
+  background: #e8e8e8;
+  color: #9b9b9b;
+}
+
+.albfre-events-badge--date {
+  color: #a57cef;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.albfre-events-badge--date--day {
+  font-size: 20px;
+}
+
+.albfre-events-badge--date--month {
+  font-size: 12px;
+}
+
+.albfre-events-badge--date--hour {
+  font-size: 10px;
+}
+
+.albfre-events-info-done .events-badge--date {
+  color: #cccccc;
+}
+
+.albfre-events--item--size {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.albfre-events--item--size--width {
+  padding-right: 14px;
+  border-right: 1px solid #CCCCCC;
+  margin-right: 14px;
+}
+
+.albfre-events--item--size--item--label {
+  font-weight: bold;
+  line-height: 16px;
+  font-size: 14px;
+  color: #373A3C;
+}
+
+.albfre-events--item--size--item--input {
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 56px;
+}
+
+.albfre-events--item--size--item--check {
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 1px;
+}
+
+.albfre-events--item--size--item--hundred {
+  font-weight: normal;
+  line-height: 16px;
+  font-size: 14px;
+  color: #8E8E8E;
+}
+
+.albfre-events--item--container {
+  width: 100%;
+  padding: 12px;
+}
+
+.albfre-events--item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.albfre-events--item--match {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.albfre-events--item--team {
+  text-align: center;
+}
+
+.albfre-events--item--team--logo {
+  width: 30px;
+  height: 30px;
+}
+
+.albfre-events--item--team--name {
+  font-size: 12px;
+	font-weight: bold;
+	line-height: 0.8;
+  color: #4a4a4a;
+  margin-top: 5px;
+}
+
+.albfre-events--item--match--vs {
+  color: #4a4a4a;
+  font-size: 8px;
+  margin: 0 8px;
+  padding-bottom: 10px;
+}
+
+.albfre-events--item--team {
+  text-align: center;
+}
+
+.albfre-events--item--info--wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.albfre-events--item--info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.albfre-events--item--info--title {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  text-align: left;
+  color: #5021a6;
+  text-decoration: none;
+}
+
+.albfre-events--item--subinfo {
+  display: flex;
+  margin: 5px 0;
+}
+
+.albfre-events--item--info--subtitle {
+  height: 16px;
+  font-size: 12px;
+  text-align: left;
+  color: #8e8e8e;
+}
+
+.albfre-events--item--ctas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.albfre-btn-arena-secondary, .btn-arena-secondary:focus {
+  background: transparent;
+  text-transform: uppercase;
+  color: #9173c7;
+  border: 1px solid transparent;
+}
+
+.albfre-btn-arena-secondary:hover {
+  background: #eceeef;
+  color: #9173c7;
+  border: 1px solid #eceeef;
+}
+
+.albfre-list-events--list {
+  padding: 13px;
+}
+
+.albfre-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.albfre-list-events--header {
+  position: relative;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.albfre-list-events--header--reload {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.albfre-list-events--header--logo {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+.albfre-list-events--header--logo > img {
+  width: 100px;
+}
+
+.albfre-list-events--header--search--input--wrapper {
+  position: relative;
+}
+
+.albfre-list-events--header--search--input {
+  width: 310.5px;
+  height: 34px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  padding-right: 35px;
+}
+
+.albfre-list-events--login {
+  margin-left: -20px;
+  background: white;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.albfre-list-events--login--wrapper {
+  max-width: 381px;
+  margin: 0 auto;
+}
+
+.albfre-list-events--login--title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.albfre-list-events--login--description {
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: left;
+  color: #8e8e8e;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.albfre-list-events--login--button {
+  width: 171px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #9173c7;
+  border: 0;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.albfre-list-events--login--button:hover {
+  color: white;
+}
+
+.albfre-list-events--login--footer {
+  font-size: 14px;
+  text-align: center;
+  color: #8e8e8e;
+  margin-top: 43px;
+}
+
+.albfre-list-events--login--footer--refresh {
+  height: 21px;
+  border-radius: 4px;
+  background-color: #9b9b9b;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.albfre-list-events--login--footer--refresh::before {
+  content: ' ';
+  background: url('albfre_icon-refresh-button.svg') center center / contain no-repeat;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.albfre-settings--body--sp {
+  display: none;
+}
+
+.albfre-sp {
+  width: 32px;
+  height: 32px;
+  clear: both;
+  margin: 20px auto;
+}
+
+/* Spinner Circle Rotation */
+.albfre-sp-circle {
+  border: 4px rgba(0, 0, 0, 0.25) solid;
+  border-top: 4px black solid;
+  border-radius: 50%;
+  -webkit-animation: albfre-spCircRot .6s infinite linear;
+  animation: albfre-spCircRot .6s infinite linear;
+}
+
+@-webkit-keyframes albfre-spCircRot {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes albfre-spCircRot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.albfre-list-events--header--search--input--icon {
+  background: url('albfre_ion-search-ionicons.svg') center center / contain no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.albfre-events--item--info--ctas {
+  display: flex;
+  align-items: center;
+}
+
+.albfre-events--item--info--ctas--type {
+  width: 89px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  font-size: 12px;
+	line-height: 2.0;
+	text-align: left;
+	color: #4a4a4a;
+}
+
+.albfre-events--item--img {
+  width: 100px;
+  height: 59px;
+  flex-shrink: 0;
+}
+
+.albfre-events--empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.albfre-events--empty--icon {
+  font-size: 48px;
+  text-align: center;
+}
+
+.albfre-events--empty--title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #4a4a4a;
+  margin-top: 20px;
+}
+
+.albfre-events--empty--subtitle {
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+  color: #8e8e8e;
+  margin-top: 8px;
+}
+
+.albfre-events--empty--btn {
+  border-radius: 4px;
+  background-color: #9173c7;
+  height: 38px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.albfre-events--empty--btn:hover {
+  text-decoration: none;
+  color: white;
+}
